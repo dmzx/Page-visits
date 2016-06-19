@@ -1,0 +1,16 @@
+p.pagevisits {
+   margin-bottom: 6px;
+}
+
+span.pagevisits {
+   background: #FFFFFF;
+   padding: 1px 6px;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   font-size: 1em;
+   line-height: 1.2em;
+   clear: both;
+   border: solid 1px #999999;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+}

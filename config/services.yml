@@ -1,0 +1,8 @@
+services:
+    dmzx.pagevisits.listener:
+        class: dmzx\pagevisits\event\listener
+        arguments:
+            - '@config'
+            - '@template'
+        tags:
+            - { name: event.listener }
