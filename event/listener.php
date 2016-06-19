@@ -15,7 +15,7 @@ class listener implements EventSubscriberInterface
 {
 	/** @var \phpbb\config\config */
 	protected $config;
-	
+
 	/** @var \phpbb\template\template */
 	protected $template;
 
@@ -55,7 +55,7 @@ class listener implements EventSubscriberInterface
 		$pagevisits = (isset($this->config['pageviews'])) ? ($this->config['pageviews'] + 1) : 1;
 		$this->config->set('pageviews', $pagevisits, 1);
 		$pagevisits = number_format($pagevisits, 0, '.', ',');
-		
+
 		$this->template->assign_vars(array(
 			'PAGEVISITS'		=> $pagevisits,
 		));
